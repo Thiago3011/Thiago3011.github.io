@@ -94,7 +94,7 @@
 
       <p>Faça já seu orçamento</p>
 
-      <form class="form-contato">
+      <form class="form-orcamento">
 
         <fieldset class="campo-dados">
 
@@ -116,9 +116,9 @@
 
           <div class="label-input-group">
 
-            <label for="telefone" class="titulo-input">Telefone</label>
+            <label for="tel" class="titulo-input">Telefone</label>
 
-            <input type="tel" id="telefone" class="input" placeholder="(xx) xxxxx-xxxx" required>
+            <input type="tel" id="tel" class="input" placeholder="(XX) XXXXX-XXXX" required>
 
           </div>
 
@@ -128,13 +128,17 @@
 
         <fieldset class="campo-msg">
 
-          <label for="msg">Mensagem</label>
+          <div class="label-input-group">
 
-          <textarea id="msg" class="msg-box" cols="30" rows="10" required></textarea>
+            <label for="msg" class="titulo-input">Mensagem</label>
 
-          <input type="submit" value="Enviar dados">
+            <textarea id="msg" class="msg-box" cols="50" rows="30" required></textarea>
+
+          </div>
 
         </fieldset>
+
+        <input type="submit" class="btn-submit" value="Solicitar orçamento">
 
       </form>
 
