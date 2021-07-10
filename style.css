@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 /* Configs */
 
 * {
@@ -14,13 +16,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.2px;
+  
+}
+
+.home h1 {
+  margin-top: 4em;
 }
 
 /* header */
 
 header {
   width: 100%;
-  background-color: darkcyan;
+  background-color: rgb(214, 214, 214);
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: fixed;
@@ -59,15 +68,14 @@ header {
   transition: all 0.3s;
 }
 
-
 /* main */
-main h1 {
+
+.titulo-section {
   text-align: center;
   margin: 2em 0;
-}
-
-.home h1 {
-  margin-top: 6em;
+  font-size: 35px;
+  color: rgb(57, 201, 201);
+  text-transform: uppercase;
 }
 
 main p {
@@ -96,8 +104,37 @@ main p {
 
 .projetos-imagens img {
   width: 20%;
+  box-shadow: 1px 1px 10px 1px rgb(161, 161, 161);
 }
 
+.form-contato {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.label-input-group {
+  display: flex;
+  flex-direction: column;
+  width: calc(80% / 3);
+  margin-right: 30px;
+}
+
+.titulo-input {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.campo-dados, .campo-msg {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 
 /* footer */
 
