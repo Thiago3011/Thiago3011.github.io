@@ -38,6 +38,17 @@ header {
   position: fixed;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.logo h1 {
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
 .logo-header {
   width: 100px;
 }
@@ -48,7 +59,7 @@ header {
 }
 
 .nav-bar nav ul:last-child {
-  margin: 0 20px
+  margin: 0 50px
 }
 
 .nav-bar nav ul li {
@@ -90,13 +101,34 @@ main p {
   width: 100%;
 }
 
-.lista-servicos {
+.home-content {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url("https://casaserralheiro.com.br/wp-content/uploads/2018/09/cds_blog_comoaumentarosucessodasuaserralheria-1170x614.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  width: 80%;
+  height: 400px;
   margin: 0 auto;
-  width: 50%;
 }
 
-.lista-servicos ul li {
+.home-content p {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.home-content ul li {
   margin-bottom: 0.5em;
+  color: white;
+  font-weight: bold;
+  list-style: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.lista-servicos {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .projetos-imagens {
@@ -133,7 +165,7 @@ main p {
   font-size: 15px;
 }
 
-.campo-dados, .campo-msg {
+.campo-dados, .campo-msg, .campo-submit {
   display: flex;
   width: 800px;
   height: 80px;
@@ -177,3 +209,4 @@ footer {
   font-weight: bold;
   font-size: 15px;
 }
+

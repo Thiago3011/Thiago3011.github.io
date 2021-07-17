@@ -15,8 +15,11 @@
 
   <header>
 
-    <img src="kisspng-gray-wolf-logo-photography-wolf-logo-5ae014b91cc3e1.5206582615246348091178.png" alt="Logo site"
-      class="logo-header">
+    <div class="logo">
+      <img src="kisspng-gray-wolf-logo-photography-wolf-logo-5ae014b91cc3e1.5206582615246348091178.png" alt="Logo site"
+        class="logo-header">
+      <h1>Made Of Iron</h1>
+    </div>
 
     <div class="nav-bar">
 
@@ -43,28 +46,35 @@
   <main>
 
     <section class="home">
+      
+      <div class="home-content">
 
-      <h1 class="titulo-section">Engenharia em serviços</h1>
+        <h1 class="titulo-section">Engenharia em serviços</h1>
 
-      <p>Trabalhamos com:</p>
+        <p>Trabalhamos com:</p>
 
-      <div class="lista-servicos">
+        <div class="lista-servicos">
 
-        <ul>
+          <ul>
 
-          <li>fabricação de coberturas de policarbonato, fixo ou retrátil, com estrutura em alumínio ou aço.</li>
+            <li>fabricação de coberturas de policarbonato, fixo ou retrátil, com estrutura em alumínio ou aço.</li>
+  
+            <li>fabricação de telhados com estrutura metálica, para telhas termo acústica ou cerâmica</li>
+  
+            <li>fabricação de mezanino, escadas e itens de metal sob encomenda</li>
+  
+            <li>fabricação de projetos arquitetônicos em metal</li>
+  
+            <li>Serralheira em geral</li>
+  
+          </ul>
 
-          <li>fabricação de telhados com estrutura metálica, para telhas termo acústica ou cerâmica</li>
-
-          <li>fabricação de mezanino, escadas e itens de metal sob encomenda</li>
-
-          <li>fabricação de projetos arquitetônicos em metal</li>
-
-          <li>Serralheira em geral</li>
-
-        </ul>
+        </div>
 
       </div>
+
+
+
 
     </section>
 
@@ -94,7 +104,7 @@
 
       <p>Faça já seu orçamento</p>
 
-      <form class="form-orcamento">
+      <form class="form-orcamento" action="https://formspree.io/f/xknkvvav" method="POST">
 
         <fieldset class="campo-dados">
 
@@ -102,7 +112,7 @@
 
             <label for="nome" class="titulo-input">Nome completo</label>
 
-            <input type="text" id="nome" class="input" required>
+            <input type="text" id="nome" class="input" name="Nome completo" required>
 
           </div>
 
@@ -110,7 +120,7 @@
 
             <label for="email" class="titulo-input">E-mail</label>
 
-            <input type="email" id="email" class="input" placeholder="contato@dominio.com" required>
+            <input type="email" id="email" class="input" name="Remetente" placeholder="contato@dominio.com" required>
 
           </div>
 
@@ -118,7 +128,7 @@
 
             <label for="tel" class="titulo-input">Telefone</label>
 
-            <input type="tel" id="tel" class="input" placeholder="(XX) XXXXX-XXXX" required>
+            <input type="tel" id="tel" class="input" name="Telefone" placeholder="(XX) XXXXX-XXXX" required>
 
           </div>
 
@@ -132,13 +142,25 @@
 
             <label for="msg" class="titulo-input">Mensagem</label>
 
-            <textarea id="msg" class="msg-box" cols="50" rows="30" required></textarea>
+            <textarea id="msg" class="msg-box" name="message" cols="50" rows="30" required></textarea>
+
 
           </div>
 
         </fieldset>
 
-        <input type="submit" class="btn-submit" value="Solicitar orçamento">
+        <input type="hidden" name="_language" value="pt-BR" />
+
+        <fieldset class="campo-submit">
+
+          <div class="submit-group">
+
+            <input type="submit" class="btn-submit" value="Solicitar orçamento">
+
+          </div>
+
+        </fieldset>
+
 
       </form>
 
