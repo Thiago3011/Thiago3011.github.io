@@ -1,4 +1,15 @@
+/* fonte */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* variaveis */
+
+:root {
+  --cor-principal: rgb(59, 184, 184);
+  --cor-secundaria: rgb(214, 214, 214);
+  --cor-bgInput: rgb(235, 232, 232);
+}
+
 
 /* Configs */
 
@@ -29,7 +40,7 @@ fieldset {
 
 header {
   width: 100%;
-  background-color: rgb(214, 214, 214);
+  background-color: var(--cor-secundaria);
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: fixed;
@@ -132,24 +143,15 @@ header {
   box-shadow: 1px 1px 10px 1px rgb(161, 161, 161);
 }
 
+.form-orcamento fieldset {
+  margin: 0.5em 0;
+}
+
 .form-orcamento {
     display: flex;
     flex-direction: column;
     width: 60%;
     margin: 0 auto;
-    border: solid 1px red;
-}
-
-.campo-dados {
-  display: flex;
-  justify-content: space-between;
-}
-
-.campo-submit {
-  border: solid 1px yellow;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .titulo-input {
@@ -157,25 +159,46 @@ header {
   font-weight: bold;
 }
 
+.label-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-dados {
+  display: flex;
+  justify-content: space-between;
+}
+
 .input {
   width: 250px;
   padding: 10px;
   font-size: 15px;
-  background-color: rgb(235, 232, 232);
+  background-color: var(--cor-bgInput);
   border: rgb(221, 219, 219) solid 1px;
   border-radius: 5px;
 }
 
-.label-input-group {
+.campo-msg textarea {
+  border-radius: 5px;
+  background-color: var(--cor-bgInput);
+  border: rgb(221, 219, 219) solid 1px;
+  resize: none;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.campo-submit {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  border: solid 1px blue;
+  justify-content: center;
 }
 
 .btn-submit {
   width: 40%;
   padding: 10px;
-  background-color: rgb(57, 201, 201);
+  background-color: var(--cor-principal);
 
   border: solid 1px black;
   border-radius: 5px;
@@ -185,10 +208,11 @@ header {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .btn-submit:hover {
-  background-color: rgb(47, 163, 163);
+  background-color: rgb(47, 153, 153);
   width: 100%;
   transition: all 0.2s ease-in;
   cursor: pointer;
@@ -212,7 +236,7 @@ header {
 
 footer {
   width: 100%;
-  background-color: darkcyan;
+  background-color: var(--cor-principal);
   padding: 10px 0;
 }
 
