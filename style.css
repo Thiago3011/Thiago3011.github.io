@@ -180,6 +180,20 @@ header {
   margin: 0 auto;
 }
 
+.contato {
+  text-align: center;
+}
+
+.contato-map {
+  width: 90%;
+  margin: 0 auto 2em auto;
+}
+
+.contato-map iframe{
+  width: 100%;
+  height: 300px;
+}
+
 /* footer */
 
 footer {
