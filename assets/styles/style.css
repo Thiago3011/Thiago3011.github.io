@@ -42,3 +42,10 @@ fieldset {
     color: rgb(57, 201, 201);
     text-transform: uppercase;
 }
+
+:target::before {
+    content: "";
+    display: block;
+    height: 60px; /* fixed header height*/
+    margin: -60px 0 0; /* negative fixed header height */
+  }
