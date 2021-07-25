@@ -1,7 +1,24 @@
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     background-color: var(--cor-principal);
     padding: 10px 0;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-nav-bar {
+    justify-self: self-start;
+    align-self: center;
+    margin-left: 16px;
+}
+
+.footer-nav-bar a {
+    text-decoration: none;
 }
 
 .logo-footer {

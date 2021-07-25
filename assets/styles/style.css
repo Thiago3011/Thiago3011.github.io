@@ -1,13 +1,14 @@
 /* fonte */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
 /* variaveis */
 
 :root {
     --cor-principal: rgb(59, 184, 184);
     --cor-secundaria: rgb(214, 214, 214);
     --cor-bgInput: rgb(235, 232, 232);
+    --cor-whats: green;
+    --cor-whats-sec: white;
 }
 
 /* Configs */
@@ -46,6 +47,10 @@ fieldset {
 :target::before {
     content: "";
     display: block;
-    height: 60px; /* fixed header height*/
-    margin: -60px 0 0; /* negative fixed header height */
-  }
+    height: 60px;
+    /* fixed header height*/
+    margin: -60px 0 0;
+    /* negative fixed header height */
+}
+
+
