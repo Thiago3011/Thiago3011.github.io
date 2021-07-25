@@ -1,0 +1,20 @@
+footer {
+    width: 100%;
+    background-color: var(--cor-principal);
+    padding: 10px 0;
+}
+
+.logo-footer {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.logo-footer img {
+    width: 100px;
+}
+
+.logo-footer p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
