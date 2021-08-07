@@ -4,8 +4,12 @@
 /* variaveis */
 
 :root {
-    --cor-principal: rgb(59, 184, 184);
-    --cor-secundaria: rgb(214, 214, 214);
+    --cor-principal: rgb(20, 93, 160);
+    --cor-secundaria: rgb(217, 217, 217);
+
+    --cor-titulo: rgb(177, 212, 224);
+    --cor-botao: rgb(63, 164, 197);
+
     --cor-bgInput: rgb(235, 232, 232);
     --cor-whats: green;
     --cor-whats-sec: white;
@@ -40,16 +44,17 @@ fieldset {
     text-align: center;
     margin: 2em 0;
     font-size: 35px;
-    color: rgb(57, 201, 201);
+    color: var(--cor-titulo);
     text-transform: uppercase;
+    text-shadow: var(--cor-principal) 2px 2px 1px;
 }
 
 :target::before {
     content: "";
     display: block;
-    height: 60px;
+    height: 85px;
     /* fixed header height*/
-    margin: -60px 0 0;
+    margin: -85px 0 0;
     /* negative fixed header height */
 }
 

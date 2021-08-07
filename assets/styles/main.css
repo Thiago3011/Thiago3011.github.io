@@ -7,7 +7,7 @@
 .home-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://casaserralheiro.com.br/wp-content/uploads/2018/09/cds_blog_comoaumentarosucessodasuaserralheria-1170x614.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("https://casaserralheiro.com.br/wp-content/uploads/2018/09/cds_blog_comoaumentarosucessodasuaserralheria-1170x614.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -19,10 +19,12 @@
 .home-left-content img {
     width: 100%;
     height: 100%;
+    border: solid red 1px;
 }
 
 .home-right-content-text {
     color: white;
+    text-shadow: var(--cor-principal) 2px 2px 1px;
     font-size: 20px;
     text-align: center;
 }
@@ -30,6 +32,7 @@
 .projetos-imagens {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -96,10 +99,10 @@
 .btn-submit {
     width: 40%;
     padding: 10px;
-    background-color: var(--cor-principal);
+    background-color: var(--cor-botao);
     border: solid 1px black;
     border-radius: 5px;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-out;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -108,9 +111,9 @@
 }
 
 .btn-submit:hover {
-    background-color: rgb(47, 153, 153);
+    background-color: var(--cor-principal);
     width: 100%;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
     cursor: pointer;
 }
 
@@ -126,4 +129,13 @@
 .contato-map iframe {
     width: 100%;
     height: 300px;
+}
+
+.contato nav ul li {
+    display: inline-block;
+}
+
+.contato img {
+    height: 60px;
+    width: 60px;
 }
