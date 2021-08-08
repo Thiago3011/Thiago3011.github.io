@@ -42,20 +42,28 @@ fieldset {
 
 .titulo-section {
     text-align: center;
-    margin: 2em 0;
-    font-size: 35px;
+    margin: 1.5em 0;
+    font-size: 46px;
     color: var(--cor-titulo);
     text-transform: uppercase;
     text-shadow: var(--cor-principal) 2px 2px 1px;
 }
 
+.subtext {
+    text-align: center;
+    margin: 2em 0;
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+}
+
+/* anchor thing */
+
 :target::before {
     content: "";
     display: block;
     height: 85px;
-    /* fixed header height*/
     margin: -85px 0 0;
-    /* negative fixed header height */
 }
 
 

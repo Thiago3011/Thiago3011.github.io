@@ -10,16 +10,20 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("https://casaserralheiro.com.br/wp-content/uploads/2018/09/cds_blog_comoaumentarosucessodasuaserralheria-1170x614.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: center;
+    background-position: center;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    background-attachment: fixed;
+}
+
+.home-left-content {
+    min-height: 100%;
 }
 
 .home-left-content img {
     width: 100%;
     height: 100%;
-    border: solid red 1px;
 }
 
 .home-right-content-text {
@@ -29,16 +33,54 @@
     text-align: center;
 }
 
-.projetos-imagens {
+.projetos-imagens-group1, .projetos-imagens-group2 {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.projetos-imagens img {
-    width: 20%;
+.projetos-imagens-group1 img, .projetos-imagens-group2 img{
+    width: 100%;
     box-shadow: 1px 1px 10px 1px rgb(161, 161, 161);
+}
+
+.projetos-imagens-group1 {
+    margin: 2em 0;
+}
+
+.projetos-imagens-group2 {
+    margin-bottom: 2em;
+}
+
+.img-text-group {
+    display: grid;
+    grid-template-rows: 2fr auto;
+    gap: 16px;
+    width: 20%;
+}
+
+.img-text-group h2 {
+    text-align: center;
+    color: var(--cor-principal);
+}
+
+.img-text-group p {
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+.orcamentos {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("https://casaserralheiro.com.br/wp-content/uploads/2018/09/cds_blog_comoaumentarosucessodasuaserralheria-1170x614.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: transparent solid 1px;
+}
+
+.orcamentos .subtext {
+    color: white;
 }
 
 .form-orcamento fieldset {
@@ -53,6 +95,7 @@
 .titulo-input {
     font-size: 18px;
     font-weight: bold;
+    color: white;
 }
 
 .campo-dados {

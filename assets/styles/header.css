@@ -13,10 +13,10 @@ header {
 }
 
 .logo-header {
-    width: 150px;
+    width: 130px;
 }
 
-.nav-bar {
+.nav-bar { 
     justify-self: end;
     align-self: center;
 }
@@ -40,11 +40,6 @@ header {
     display: block;
     position: relative;
     padding: 0.2em 0;
-}
-
-.nav-bar a:hover {
-    color: var(--cor-principal);
-    transition: all 0.3s;
 }
 
 /* Codigo underline */
