@@ -44,10 +44,6 @@ header {
 
 /* Codigo underline */
 
-.nav-bar nav ul li:first-child a:focus::after {
-    opacity: 0;  
-}
-
 .nav-bar a::after {
     content: '';
     position: absolute;
