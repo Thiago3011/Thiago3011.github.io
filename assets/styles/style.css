@@ -11,8 +11,12 @@
     --cor-botao: rgb(63, 164, 197);
 
     --cor-bgInput: rgb(235, 232, 232);
-    --cor-whats: green;
-    --cor-whats-sec: white;
+
+    --cor-icons: rgb(75, 75, 75);
+
+    --cor-whats: rgb(58, 194, 83);
+    --cor-face: rgb(16, 133, 218);
+    --cor-wts: rgb(58, 194, 83);
 }
 
 /* Configs */
