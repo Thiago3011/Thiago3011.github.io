@@ -1,0 +1,60 @@
+@media screen and (max-width: 448px) {
+
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-bar i {
+      font-size: 40px;
+    }
+
+    .nav-bar i:active {
+      color: gray;
+    }
+
+    .nav-bar .fa-bars {
+      display: inline-block;
+      position: absolute;
+      top: 46px;
+      right: 30px;
+    }
+
+    .nav-bar ul {
+      display: none;
+    }
+
+    .right-menu-content-cel {
+      display: block;
+      background-color: rgb(102, 99, 99);
+
+      height: 100vh;
+      width: 70%;
+      position: absolute;
+      right: 0;
+
+    }
+
+    .menu-close-button {
+      height: 10%;
+      border: white solid 1px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+    }
+
+    .menu-close-button i {
+      font-size: 40px;
+      margin-right: 10px;
+    }
+
+    .menu-links {
+      border: blue solid 1px;
+      height: 90%;
+    }
+
+    .hide {
+      display: none;
+    }
+
+}

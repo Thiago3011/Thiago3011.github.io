@@ -61,6 +61,10 @@ fieldset {
     color: black;
 }
 
+.nav-bar .fa-bars, .right-menu-content-cel {
+    display: none;
+}
+
 /* anchor thing */
 
 .anchor {
@@ -69,4 +73,5 @@ fieldset {
     top: -86px;
     visibility: hidden;
 }
+
 

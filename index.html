@@ -5,10 +5,13 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/style-cel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <title>Teste</title>
@@ -28,8 +31,10 @@
 
             <nav>
 
-                <ul>
+                <div><i class="fas fa-bars 7x" data-open-button></i></div>
 
+                <ul>
+                    
                     <li><a href="#home">Início</a></li>
 
                     <li><a href="#projetos">Projetos</a></li>
@@ -42,6 +47,33 @@
 
             </nav>
 
+        </div>
+
+        <div class="right-menu-content-cel hide" data-right-menu>
+
+            <div class="menu-close-button">
+                <i class="far fa-times-circle" data-close-button></i>
+            </div>
+
+            <div class="menu-links">
+
+                <nav>
+
+                    <ul>
+                        
+                        <li><a href="#home">Início</a></li>
+    
+                        <li><a href="#projetos">Projetos</a></li>
+    
+                        <li><a href="#orcamentos">Orçamentos</a></li>
+    
+                        <li><a href="#contato">Contatos</a></li>
+    
+                    </ul>
+    
+                </nav>
+
+            </div>
         </div>
 
     </header>
@@ -284,6 +316,8 @@
         </p>
 
     </footer>
+
+    <script src="lib/script.js"></script>
 
 </body>
 
