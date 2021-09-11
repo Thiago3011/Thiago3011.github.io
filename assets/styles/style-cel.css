@@ -1,5 +1,5 @@
 @media screen and (max-width: 480px) {
-  
+
   header {
     display: flex;
     flex-direction: column;
@@ -43,13 +43,13 @@
   aside {
     height: 100%;
     width: 100%;
+    top: 0;
     position: fixed;
     display: flex;
   }
 
   .left-menu-content-blur {
     width: 30%;
-    height: 100%;
     background-color: black;
     opacity: 0.5;
   }
@@ -58,7 +58,6 @@
     display: block;
     box-shadow: black 1px 1px 1px 1px;
     background-color: var(--cor-secundaria);
-    height: 100%;
     width: 70%;
   }
 
@@ -109,7 +108,7 @@
 
   .home {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("/assets/images/serralheiro.jpg");
-    width: 104%;
+    width: 100%;
   }
 
   .home-content {

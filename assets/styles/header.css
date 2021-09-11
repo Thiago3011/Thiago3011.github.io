@@ -1,5 +1,6 @@
 header {
     width: 100%;
+    top: 0;
     background-color: var(--cor-secundaria);
     display: grid;
     grid-template-columns: 1fr 2fr;
