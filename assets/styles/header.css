@@ -44,7 +44,7 @@ header {
 
 /* Codigo underline */
 
-.nav-bar a::after, .right-content-developers-footer a::after {
+.nav-bar a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -57,9 +57,7 @@ header {
   }
   
   .nav-bar a:hover::after,
-  .nav-bar a:focus::after,
-  .right-content-developers-footer a:hover::after,
-  .right-content-developers-footer a:focus::after {
+  .nav-bar a:focus::after {
     opacity: 1;
     transform: translate3d(0, 3px, 0);
   }
