@@ -14,7 +14,6 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    border: solid 5px red;
     top: 0;
     background-color: rgba(0, 0, 0, 0.26);
     justify-content: center;
@@ -23,10 +22,8 @@
 
 .container {
   display: inline-block;
-  border: solid 5px blue;
   width: 80%;
   height: 90%;
-  background-color: rgb(255, 0, 0);
 }
 
   .titulo-section {
@@ -97,11 +94,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 8px 8px 0 0;
   }
 
-  .menu-close-button i {
+  .menu-close-button i, .menu-close-button h1 {
     font-size: 40px;
-    margin-right: 15px;
+    margin: 0 15px;
   }
 
   .menu-links {
@@ -152,10 +150,9 @@
     visibility: hidden;
   }
 
-  .projetos-imagens-group1, .projetos-imagens-group2 {
-  border: green solid 1px;
-  }
-
+  .img-text-group {
+    width: 20%;
+}
 
   .projetos-imagens-group1 img, .projetos-imagens-group2 img{
     width: 100%;
@@ -164,13 +161,12 @@
 
   .img-text-group {
     display: flex;
-    border: blue solid 1px;
     flex-direction: column;
+    background-color: var(--cor-secundaria);
   }
 
   .img-text-group h2 {
     text-align: center;
-    border: red solid 1px;
     font-size: 100%;
     color: var(--cor-principal);
   }
@@ -179,16 +175,15 @@
     display: none;
   }
 
-  .far.fa-comment-dots {
+  .far.fa-question-circle {
     display: block;
-    font-size:40px;
+    font-size: 30px;
     text-align: center;
   }
 
   /* Menu flutuante para as descrições projetos*/
 
   .projetos-menu-group {
-    border: chartreuse solid 5px;
     width: 100%;
     height: 90%;
   }

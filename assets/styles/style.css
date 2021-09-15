@@ -59,7 +59,8 @@ fieldset {
     color: black;
 }
 
-.nav-bar .fa-bars, .right-menu-content-cel, .far.fa-comment-dots {
+.nav-bar .fa-bars, .right-menu-content-cel, .far.fa-question-circle
+{
     display: none;
 }
 
