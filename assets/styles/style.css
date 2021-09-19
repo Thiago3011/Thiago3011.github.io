@@ -59,7 +59,7 @@ fieldset {
     color: black;
 }
 
-.nav-bar .fa-bars, .right-menu-content-cel, .far.fa-question-circle
+.nav-bar .fa-bars, .right-menu-content-cel, .far.fa-question-circle, .fas.fa-expand
 {
     display: none;
 }
@@ -75,6 +75,10 @@ fieldset {
 
 .shadow-container, .container {
     display: none;
+}
+
+aside {
+    z-index: 1;
 }
 
 

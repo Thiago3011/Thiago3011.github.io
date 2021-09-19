@@ -50,12 +50,47 @@
     padding: 8px;
 }
 
-.img-text-group img{
+.img-text-group p {
+    display: none;
+}
+
+.img-icon-group {
+    position: relative;
+    display: flex;
+}
+
+.shadow {
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.img-text-group .hover-full-screen {
+    display: block;
+    font-size: 150px;
+    color: var(--cor-titulo);
+    text-shadow: var(--cor-principal) 3px 3px 2px;
+}
+
+.img-text-group img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
     border: black 2px solid;
 }
+
+/* https://medium.com/@rodolphoncarvalho/aplicando-estilos-a-um-elemento-usando-o-hover-de-outro-elemento-cada2be88a14 */
+.img-text-group img:hover + .shadow, .shadow:hover{
+    z-index: 1;
+}
+
 
 .projetos-imagens-group1, .projetos-imagens-group2 {
     margin: 2em 0;
