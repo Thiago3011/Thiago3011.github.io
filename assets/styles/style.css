@@ -42,6 +42,10 @@ fieldset {
     border: none;
 }
 
+body .hide {
+    display: none;
+}
+
 .titulo-section {
     text-align: center;
     margin: 1.5em 0;
