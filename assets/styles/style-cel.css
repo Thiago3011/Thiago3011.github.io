@@ -9,6 +9,11 @@
     flex-direction: column;
   }
 
+  .shadow-project-container, .shadow {
+    display: none;
+  }
+
+
   .shadow-container {
     display: flex;
     position: fixed;
@@ -73,6 +78,7 @@
     bottom: 0;
     position: fixed;
     display: flex;
+    z-index: 2;
   }
 
   .left-menu-content-blur {
